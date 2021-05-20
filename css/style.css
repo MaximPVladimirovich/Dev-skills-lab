@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px auto 200px;
+}
+
+#container {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#titleCtn {
+  background-color: #93c47d;
+  color: white;
+  min-height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#title {
+  margin: 0;
+  font-size: 18px;
+}
+#submitCtn {
+  display: flex;
+}
+
+#text input,
+#addSkill {
+  border: solid 3px #93c47d;
+  height: 30px;
+}
+
+#addSkill {
+  background-color: white;
+  color: #93c47d;
+  width: 100%;
+  align-self: center;
+}
+#text {
+  margin: auto;
+}
+
+#btn {
+  margin: 0 auto 0 5px;
+}
+.skill {
+  margin-left: 8px;
+}
+#skills {
+  min-height: 20%;
+}
+
+.newSkill {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  color: #ffa725;
+}
+
+.fa-times {
+  background-color: #e06666;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  color: white;
+}
+
+.inputField {
+  outline: none;
+}
